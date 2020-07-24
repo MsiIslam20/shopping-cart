@@ -1,137 +1,9 @@
-// // //Item Increase for Each Click
-// // function eachItemIncrease(id, input, finalPrice, getPrice){
-// //     const getPricePhone = parseFloat(document.getElementById(getPrice).innerText);
-// //     const itemIncrease = document.getElementById(id);
-// //     itemIncrease.addEventListener("click" , function(){
-// //         let inputNumber = document.getElementById(input).value;
-// //         inputNumber++
-// //         document.getElementById(input).value = inputNumber; 
-    
-// //         const priceNumber = parseFloat(document.getElementById(finalPrice).innerText);
-// //         const doubleNumber = priceNumber + getPricePhone;
-// //         document.getElementById(finalPrice).innerText = doubleNumber; 
-        
-          
-// //     })
-// // }
-
-// // eachItemIncrease("itemIncrease", "inputNumber" , "pricePhone", "pricePhone" )
-// // eachItemIncrease("caseIncrease" , "caseNumber" , "priceCase", "priceCase")
-
-// // //Item Decrease for Each Click
-// // function eachItemDecrease(id, input , finalPrice , getPrice){
-// //     const getPricePhone = parseFloat(document.getElementById(getPrice).innerText);
-// //     const itemDecrease = document.getElementById(id)
-// //     itemDecrease.addEventListener("click" , function(){
-// //         let inputNumber = document.getElementById(input).value;
-// //         inputNumber--
-// //         document.getElementById(input).value = inputNumber ;
-    
-    
-// //         const priceNumber = parseFloat(document.getElementById(finalPrice).innerText);
-// //         const doubleNumber = priceNumber - getPricePhone;
-// //         document.getElementById(finalPrice).innerText = doubleNumber; 
-         
-// //     })
-    
-// // }
-
-// // eachItemDecrease("itemDecrease", "inputNumber" , "pricePhone", "pricePhone" )
-// // eachItemDecrease("caseDecrease" , "caseNumber" , "priceCase", "priceCase")
-
-
-// // var finalOutput = parseFloat(document.getElementById("finalOutput").innerText);
-// // document.getElementById("finalOutput").innerText = 0;
-
-
-
-
-
-
-
-// // //Item Increase for Each Click
-// // function eachItemIncrease(id, input, finalPrice, getPrice){
-// //     const getPricePhone = parseFloat(document.getElementById(getPrice).innerText);
-// //     const itemIncrease = document.getElementById(id);
-// //     itemIncrease.addEventListener("click" , function(){
-// //         let inputNumber = document.getElementById(input).value;
-// //         inputNumber++
-// //         document.getElementById(input).value = inputNumber; 
-    
-// //         const priceNumber = parseFloat(document.getElementById(finalPrice).innerText);
-// //         const doubleNumber = priceNumber + getPricePhone;
-// //         document.getElementById(finalPrice).innerText = doubleNumber; 
-        
-          
-// //     })
-// // }
-
-// // eachItemIncrease("itemIncrease", "inputNumber" , "pricePhone", "pricePhone" )
-// // eachItemIncrease("caseIncrease" , "caseNumber" , "priceCase", "priceCase")
-
-
-
-
-// // const itemIncrease = document.getElementById("itemIncrease");
-// // itemIncrease.addEventListener("click" , function sum(){
-// //     let inputNumber = document.getElementById("inputNumber").value;
-// //     inputNumber++
-// //     document.getElementById("inputNumber").value = inputNumber; 
-// //     return inputNumber;
-// // })
-
-
-// // const getPricePhone = parseFloat(document.getElementById("pricePhone").innerText);
-
-// // const doubleNumber = getPricePhone + getPricePhone;
-
-// // const getPricePhoneCase = parseFloat(document.getElementById("priceCase").innerText);
-// // const tax = parseFloat(document.getElementById("tax").innerText)
-// // const sumOfItem = document.getElementById("finalOutput").innerText = getPricePhone + getPricePhoneCase;
-
-// // document.getElementById("totalSum").innerText = tax + sumOfItem;
-
-// let inputNumber = document.getElementById("inputNumber").value;
-
-// let priceOne = parseFloat(document.getElementById("pricePhone").innerText);
-// let priceTwo = parseFloat(document.getElementById("priceCase").innerText);
-// let subTotal = parseFloat(document.getElementById("subTotal").innerText);
-// let tax = parseFloat(document.getElementById("tax").innerText);
-
-// function sumFunction(price1, price2) {
-
-//     subTotal =  price1 + price2
-//     document.getElementById("subTotal").innerText = subTotal;
-//     subTotalWithTax = subTotal + tax
-//     document.getElementById("totalSum").innerText = subTotalWithTax; 
-
-// }
-
-// // sumFunction(priceOne, priceTwo)
-
-
-// function calculate(arr, count){
-
-//     var result = arr * count
-//     document.getElementById("pricePhone").innerText = result
-    
-// }
-
-
-// function inputValue(){
-//     inputNumber++
-//     document.getElementById("inputNumber").value = inputNumber
-//     calculate(priceOne, inputNumber )
-// }
-
-
-
-
-// clickFunction All
+// Shopping Cart Function All
 let priceItem = parseFloat(document.getElementById("pricePhone").innerHTML);
 let priceItemCase = parseFloat(document.getElementById("priceCase").innerHTML);
 
 
+//Final Calculate Options
 function FinalCalculator(price, otherPrice) {
     let subTotal = price + otherPrice;
     let tax = 0;
@@ -141,9 +13,6 @@ function FinalCalculator(price, otherPrice) {
     document.getElementById("tax").innerText = tax;
     document.getElementById("totalSum").innerText = totalWithTax;
 }
-
-
-
 
 //Number Count Function
 function numCount(inputId, sign) {
