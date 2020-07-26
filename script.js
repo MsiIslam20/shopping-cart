@@ -1,12 +1,12 @@
 // Shopping Cart Function All
-let priceItem = parseFloat(document.getElementById("pricePhone").innerHTML);
-let priceItemCase = parseFloat(document.getElementById("priceCase").innerHTML);
+let priceItem = parseFloat(document.getElementById("pricePhone").innerText);
+let priceItemCase = parseFloat(document.getElementById("priceCase").innerText);
 
 
 //Final Calculate Options
 function FinalCalculator(price, otherPrice) {
     let subTotal = price + otherPrice;
-    let tax = 0;
+    let tax = (subTotal * 0.01).toFixed(1); //tax 0.1% added
     let totalWithTax = subTotal + tax;
     
     document.getElementById("subTotal").innerText = subTotal;
@@ -28,9 +28,9 @@ function numCount(inputId, sign) {
 function priceCount(inputId, priceId, unitPrice) {
 
     let input = parseInt(document.getElementById(inputId).value);
-    let price = parseInt(document.getElementById(priceId).innerHTML);
+    let price = parseFloat(document.getElementById(priceId).innerText);
 
-    let totalPrice = parseFloat(document.getElementById("subTotal").innerHTML);
+    let totalPrice = parseFloat(document.getElementById("subTotal").innerText);
     let otherPrice = totalPrice - price;
     
 
